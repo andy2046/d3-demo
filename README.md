@@ -5,3 +5,8 @@ If you have questions, suggestions, or bug reports, you can find me on github [@
 
 
 ## Free programming tutorials
+
+I've listed several free tutorials that you might enjoy 
+
+- [D3 gallery: a free tutorial from D3 that teaches Basic Charts, Interaction & Animation, Maps and more](https://github.com/d3/d3/wiki/Gallery)
+- [more examples for D3](http://bl.ocks.org/mbostock)
