@@ -10,6 +10,9 @@
 		 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js" charset="utf-8">
 		// src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"   
 		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js" charset="utf-8">
+		</script>
+		<script src="../static/assets/js/barChartTrendlineBottomLegend.js"></script>
 		<!--[if lte IE 8]><script src="../static/assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../static/assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="../static/assets/css/ie8.css" /><![endif]-->
@@ -124,6 +127,37 @@
 		stroke-width: 1;
 	}
 
+	hidden text {
+			display: none;
+		}
+
+  .tooltipsvg {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+			left: 80%;
+			-moz-transform: translate(-80%, 0);
+			-webkit-transform: translate(-80%, 0);
+			transform: translate(-80%, 0);
+		}
+  .tooltipsvg.hidden {
+			display: none;
+		}
+  .tooltipsvg p {
+             margin: 0;
+             font-family: sans-serif;
+             font-size: 12px;
+             line-height: 20px;
+		}
 		
 		</style>		
     </head>
@@ -1344,6 +1378,20 @@ var g = svg.selectAll("g")
 
 	//-----------------------------stack chart end-----------------------------------------------------
 	
+	//----------------------------barChartTrendlineBottomLegend start-------------------------------------------
+	
+	document.addEventListener("DOMContentLoaded", function(event) {
+	
+	var data = '[{"yearMonth":"1945-04","busgrp":"Buddhism","appgrp":"Other","size":"120","content":"ee---etw","name":"w"},{"yearMonth":"1945-04","busgrp":"Buddhism","appgrp":"Anglican","size":"70","content":"ee---etw","name":"e"},{"yearMonth":"1945-04","busgrp":"Buddhism","appgrp":"Catholic","size":"90","content":"ee---etw","name":"r"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Orthodox","size":"110","content":"jjj","name":"t"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Other","size":"120","content":"jjj","name":"w"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Mahayana","size":"130","content":"jjj","name":"e"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Ibadhi","size":"20","content":"jjj","name":"r"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Shia","size":"120","content":"jjj","name":"t"},{"yearMonth":"1945-04","busgrp":"Christianity","appgrp":"Sunni","size":"70","content":"jjj","name":"w"},{"yearMonth":"1945-02","busgrp":"Judaism","appgrp":"Conservative","size":"90","content":"jjj","name":"e"},{"yearMonth":"1945-02","busgrp":"Judaism","appgrp":"Orthodox","size":"110","content":"ggg","name":"r"},{"yearMonth":"1945-02","busgrp":"Judaism","appgrp":"Other","size":"120","content":"ggg","name":"t"},{"yearMonth":"1945-02","busgrp":"Judaism","appgrp":"Reform","size":"130","content":"ggg","name":"w"},{"yearMonth":"1945-02","busgrp":"Buddhism","appgrp":"Other","size":"20","content":"ggg","name":"e"},{"yearMonth":"1945-02","busgrp":"Buddhism","appgrp":"Theravada","size":"120","content":"hhhh","name":"r"},{"yearMonth":"1945-02","busgrp":"Christianity","appgrp":"Anglican","size":"70","content":"hhhh","name":"t"},{"yearMonth":"1945-02","busgrp":"Christianity","appgrp":"Catholic","size":"90","content":"hhhh","name":"w"},{"yearMonth":"1945-02","busgrp":"Christianity","appgrp":"Orthodox","size":"110","content":"hhhh","name":"e"},{"yearMonth":"1945-02","busgrp":"Christianity","appgrp":"Other","size":"120","content":"hhhh","name":"r"}]';
+	
+	var svgElement = d3.select("#monthvolume");
+    var grpBy = ['yearMonth', 'busgrp','appgrp'];
+    barChartTrendlineBottomLegend(svgElement,data,grpBy);
+});
+
+	
+	//-------------------------------barChartTrendlineBottomLegend end-----------------------------------------------------------------
+	
 	//------------------------------------force layout start---------------------------------------------------------------
 	
 		var width004  = 400;	
@@ -1676,7 +1724,11 @@ var southchinaseasvg = '<?xml version="1.0" encoding="utf-8"?> <svg width="150" 
 	
         </script>
 		
+		<div id="monthvolume"></div>
+		
 		</div>
+		
+		
 		
 		<!-- Footer -->
 			<footer id="footer">
