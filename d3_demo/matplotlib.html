@@ -4,18 +4,18 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Matplotlib Demo</title>
-        <script type="text/javascript" src="../static/assets/js/prettify.js" charset="utf-8">
+        <script type="text/javascript" src="static/assets/js/prettify.js" charset="utf-8">
 		</script>
-		 <script type="text/javascript" src="../static/assets/js/lang-css.js" charset="utf-8"> 
+		 <script type="text/javascript" src="static/assets/js/lang-css.js" charset="utf-8"> 
 		</script>
 		<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" charset="utf-8">
 		// https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js
 		</script>
-		<link rel="stylesheet" type="text/css" href="../static/assets/css/sunburst.css" />
+		<link rel="stylesheet" type="text/css" href="static/assets/css/sunburst.css" />
 		<link rel="stylesheet" type="text/css" href="sunburst.css" />
-		<!--[if lte IE 8]><script src="../static/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="../static/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
 		<style type="text/css">
 		<!--
 		body { margin: 0; padding: 0 }
@@ -28,7 +28,7 @@
 	
 	<!-- Header -->
 			<header id="header">
-				<a href="#" class="image avatar"><img src="../static/images/avatar.jpg" alt="" /></a>
+				<a href="#" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
 				<h1><strong>I am Andy Peng</strong>, a super simple<br />
 				Python and Java software developer<br />
 				</h1>
@@ -36,9 +36,9 @@
 	
 	<!-- Main -->
 			<div id="main">
-			<h4>Well, now it's {{ right_now }} UTC.</h4>
-			<h1>Hello, this page is for Matplotlib demo.</h1>
-			<a href="../" class="button"><h1>Back to home page</h1></a>
+			<h4></h4>
+			<h1>Matplotlib demo app.</h1>
+			
 			<span><h1></h1></span>
 			<div>
 			<pre class="prettyprint sunburst lang-py">
@@ -58,7 +58,7 @@ plt.pie(slices,
 plt.title('Very Interesting Graph\nCheck it out')
 plt.show()
 		</pre>
-		<img src="../static/images/pie05.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/pie05.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
         
 		<div>
@@ -84,7 +84,7 @@ plt.title('Very Interesting Graph\nCheck it out')
 plt.legend()
 plt.show()
 		</pre>
-		<img src="../static/images/stackplot04.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/stackplot04.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -113,7 +113,7 @@ plt.title('Very Interesting Graph\nCheck it out')
 plt.legend()
 plt.show()
 		</pre>
-		<img src="../static/images/scatter03.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/scatter03.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -141,7 +141,7 @@ plt.title('How fast did they run today?')
 
 plt.show()
 		</pre>
-		<img src="../static/images/barh06.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/barh06.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -169,7 +169,7 @@ plt.yticks(np.arange(0, 81, 10))
 plt.legend((p1[0], p2[0]), ('Men', 'Women'))
 plt.show()
 		</pre>
-		<img src="../static/images/stackedbar07.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/stackedbar07.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -235,7 +235,7 @@ def graph_data(stock):
 graph_data('EBAY')
 
 		</pre>
-		<img src="../static/images/fillbetween08.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/fillbetween08.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -330,7 +330,7 @@ def graph_data(stock):
 graph_data('EBAY')
 
 		</pre>
-		<img src="../static/images/candlestickohlc09.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/candlestickohlc09.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -502,7 +502,7 @@ def graph_data(stock):
 graph_data('GOOG')
 
 		</pre>
-		<img src="../static/images/subplot10.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/subplot10.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -528,7 +528,7 @@ ax1.set_zlabel('z axis')
 plt.show()
 
 		</pre>
-		<img src="../static/images/3dwireframe11.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/3dwireframe11.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -560,7 +560,7 @@ ax1.set_zlabel('z axis')
 plt.show()
 
 		</pre>
-		<img src="../static/images/3dbarchart12.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/3dbarchart12.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -592,7 +592,7 @@ ax1.set_zlabel('z axis')
 plt.show()
 
 		</pre>
-		<img src="../static/images/3dscatter13.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/3dscatter13.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -612,7 +612,7 @@ plt.title('Interesting Graph\nCheck it out')
 plt.legend()
 plt.show()
 		</pre>
-		<img src="../static/images/hist02.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/hist02.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<div>
@@ -635,7 +635,7 @@ plt.title('Very Interesting Graph\nCheck it out')
 plt.legend()
 plt.show()
 		</pre>
-		<img src="../static/images/line01.png" style="border-radius:5px;" height="300" width="400" alt="" />
+		<img src="static/images/line01.png" style="border-radius:5px;" height="300" width="400" alt="" />
 		</div>
 		
 		<script type="text/javascript">
@@ -661,12 +661,12 @@ plt.show()
 			</footer>
 
 		<!-- Scripts -->
-			<script src="../static/assets/js/jquery.min.js"></script>
-			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
-			<script src="../static/assets/js/skel.min.js"></script>
-			<script src="../static/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="../static/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="../static/assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="static/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/assets/js/main.js"></script>
 		
     </body>
 </html>

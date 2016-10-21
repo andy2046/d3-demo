@@ -12,10 +12,10 @@
 		</script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js" charset="utf-8">
 		</script>
-		<script src="../static/assets/js/barChartTrendlineBottomLegend.js"></script>
-		<!--[if lte IE 8]><script src="../static/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="../static/assets/css/ie8.css" /><![endif]-->
+		<script src="static/assets/js/barChartTrendlineBottomLegend.js"></script>
+		<!--[if lte IE 8]><script src="static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
 		<style type="text/css">
 		
 			div.bar {
@@ -165,7 +165,7 @@
 	
 	<!-- Header -->
 			<header id="header">
-				<a href="#" class="image avatar"><img src="../static/images/avatar.jpg" alt="" /></a>
+				<a href="#" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
 				<h1><strong>I am Andy Peng</strong>, a super simple<br />
 				Python and Java software developer<br />
 				</h1>
@@ -173,7 +173,7 @@
 	
 	<!-- Main -->
 			<div id="main">
-			<h4>Well, now it's {{ right_now }} UTC.</h4>
+			<h4></h4>
 			
         <script type="text/javascript">
 		
@@ -192,12 +192,13 @@
               .domain([1,10])
               .range(['#f00', '#00f']);
 		
-            d3.select("#main").append("span").append("h1").text("Hello, this page is for D3 demo.");
-			d3.select("#main").append("a").attr("href", "../").attr("class", "button").html("<h1>Back to home page</h1>");
+            d3.select("#main").append("span").append("h1").text("D3 demo app.");
+			//d3.select("#main").append("a").attr("href", "../").attr("class", "button").html("<h1>home</h1>");
 			// .append("div").html("<a href='newPage.html'>new page</a>");
 			d3.select("#main").append("span").append("h1");
 			
 	//----------------------------text color change start-------------------------------------------------------------------		
+			/*
 			var dataset = [ 5, 10, 15, 20, 25 ];
 			
 			d3.select("#main")//.append("div")
@@ -213,6 +214,7 @@
 					return "black";
 					}
 				});
+				*/
 	//----------------------------text color change end-------------------------------------------------------------------
 
 	//----------------------------div column chart start-------------------------------------------------------------------
@@ -1744,12 +1746,12 @@ var southchinaseasvg = '<?xml version="1.0" encoding="utf-8"?> <svg width="150" 
 			</footer>
 
 		<!-- Scripts -->
-			<script src="../static/assets/js/jquery.min.js"></script>
-			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
-			<script src="../static/assets/js/skel.min.js"></script>
-			<script src="../static/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="../static/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="../static/assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="static/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/assets/js/main.js"></script>
 		
     </body>
 </html>

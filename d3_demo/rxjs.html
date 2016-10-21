@@ -4,27 +4,27 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>RxJS Demo</title>
-		<script src="../static/assets/js/rx.all.js">
+		<script src="static/assets/js/rx.all.js">
 		// https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.6/rx.all.js
 		</script>
 		
-        <script src="../static/assets/js/rx.dom.js">
-		// ../static/assets/js  https://npmcdn.com/rx-dom@7.0.3/dist/rx.dom.js
+        <script src="static/assets/js/rx.dom.js">
+		// static/assets/js  https://npmcdn.com/rx-dom@7.0.3/dist/rx.dom.js
 		</script>
-		<script src="../static/assets/js/rx.binding.js">
-		// ../static/assets/js  https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.binding.js
+		<script src="static/assets/js/rx.binding.js">
+		// static/assets/js  https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.binding.js
 		</script>
-		<script src="../static/assets/js/rx.dom.ajax.js">
+		<script src="static/assets/js/rx.dom.ajax.js">
 		</script>
-			<link rel="stylesheet" href="../static/assets/css/leaflet.css" />
-		<script src="../static/assets/js/leaflet.js">
+			<link rel="stylesheet" href="static/assets/css/leaflet.css" />
+		<script src="static/assets/js/leaflet.js">
 		// http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css 
 		</script>
-		<script src="http://www.mapquestapi.com/sdk/leaflet/v2.s/mq-map.js?key=vEvzl9ba8RxjkrEpM1Xm3AxZ5T8EM2sz"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.s/mq-map.js?key=vEvzl9ba8RxjkrEpM1Xm3AxZ5T8EM2sz"></script>
 		
-		<!--[if lte IE 8]><script src="../static/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="../static/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
 		<style type="text/css">
 		<!--
 		body { margin: 0; padding: 0 }
@@ -55,7 +55,7 @@
 	
 	<!-- Header -->
 			<header id="header">
-				<a href="#" class="image avatar"><img src="../static/images/avatar.jpg" alt="" /></a>
+				<a href="#" class="image avatar"><img src="static/images/avatar.jpg" alt="" /></a>
 				<h1><strong>I am Andy Peng</strong>, a super simple<br />
 				Python and Java software developer<br />
 				</h1>
@@ -63,9 +63,9 @@
 	
 	<!-- Main -->
 			<div id="main">
-			<h4>Well, now it's {{ right_now }} UTC.</h4>
-			<h1>Hello, this page is for RxJS demo.</h1>
-			<a href="../" class="button"><h1>Back to home page</h1></a>
+			<h4></h4>
+			<h1>RxJS demo app.</h1>
+			
 			<span><h1></h1></span>
 			
 		<div id="map"></div>
@@ -113,7 +113,7 @@
 	'Satellite': MQ.satelliteLayer()
 	}).addTo(map);
 	
-	var QUAKE_URL = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp";
+	var QUAKE_URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp";
 	var codeLayers = {};
 	var quakeLayer = L.layerGroup([]).addTo(map);
 
@@ -548,12 +548,12 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="../static/assets/js/jquery.min.js"></script>
-			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
-			<script src="../static/assets/js/skel.min.js"></script>
-			<script src="../static/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="../static/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="../static/assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="static/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/assets/js/main.js"></script>
 		
     </body>
 </html>
