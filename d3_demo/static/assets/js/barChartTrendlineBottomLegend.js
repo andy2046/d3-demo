@@ -590,8 +590,8 @@ function getCoords(elm,svgelm) {
 	svg1 = svgelm.getBoundingClientRect(); 
 	//console.log( el.left , el.top );
 	return {
-           left: el.left-svg1.left, // d3.event.pageX-svg1.left, //
-           top:  el.top-svg1.top // d3.event.pageY-svg1.top
+           left: d3.event.pageX-svg1.left + 470, // d3.event.pageX-svg1.left, // el.left-svg1.left,
+           top:  d3.event.pageY-svg1.top // d3.event.pageY-svg1.top // el.top-svg1.top
          }
 }
 
