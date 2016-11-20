@@ -451,17 +451,18 @@ var staffEditorM = angular.module('staffEditorM', []);
  <div> <br /> <ul class="actions"> <li><input type="submit" ng-click="ctrl.reset(staffForm)" ng-disabled="staffForm.$pristine" value="Reset" /> </li> \
  <li><input type="submit" ng-click="ctrl.save(staffForm)" ng-disabled="staffForm.$invalid" value="Save" /> </li> </ul> </div> </form></div></div>',
       replace: true,
+	  bindToController: true,
       controller: 'StaffEditorFormCtrl',
       controllerAs: 'ctrl'
     }
   });
-  staffEditorM.controller('StaffEditorFormCtrl', function($scope) {
+  staffEditorM.controller('StaffEditorFormCtrl', function() {
 	var self = this;
     self.staff = {};
     
     this.save = function(form) {
 	if(self.staff && self.staff.firstName && self.staff.lastName) {
-      $scope.staffs.push(self.staff);
+      self.staffs.push(self.staff);
       self.staff = {};
 	  form.$rollbackViewValue();
       form.$setPristine(); //Set pristine state
